@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000d2b;
+    color: #fff;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 15px;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos Classificação */
+.formulario {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.siglas {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.equipes-classificacao {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-classificacao {
+    width: 50px;
+}
+
+/* Estilos das tabelas de jogos */
+table {
+    width: 70%;
+    background: #020616;
+    color: #0f0d0d;
+    border-radius: 8px;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table th {
+    font-size: 9px;
+    color: #fff;
+}
+
+table td {
+    font-size: 6px;
+    color: #fff;
+}
+
+table tr td, table tr th {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+table tr:last-child td {
+    border: 0;
+}
+
+.centralizar {
+    display: flex;
+    width: 100%;
+    font-size: 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-equipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alinhamento-esquerda {
+    text-align: left;
+}
+
+.alinhamento-em-linha {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-pequena {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-partida {
+    display: block;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.placar {
+    display: block;
+    justify-content: end;
+    width: 35px;
+    height: 30px;
+    font-size: 7px;
+    font-weight: bold;
+    border-radius: 20%;
+    line-height: 30px;
+    background-color: #000d2b;
+    color: #fff;
+    border: none;
+}
+
+input[type=number] {
+    text-align: right;
+    font-weight: bold;
+}
+
+.imagem-classificacao {
+    width: 25px;
+}
+
+/* formatação das quartas */
+.divQuartas, .divSemifinais, .divFinais {
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.divQuartas > div, .divSemifinais > div, .divFinais > div {
+    display: block;
+    width: 80%;
+    justify-content: center;
+    margin: 10px auto;
+    background: #020616;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.jogo {
+    background: #000d2b;
+    border-radius: 18px; 
+    padding-block: 5px;
+    margin-block: 1rem;
+}
+
+.dia {
+    background: #000d2b;
+    color: #fff;
+    border-radius: 18px;
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+.hora {
+    background: #000d2b;
+    color: #fff;
+    border-radius: 18px;
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 380px) and (max-width: 768px){
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+
+    .formulario {
+        font-size: 15px;
+    }
+    
+    select {
+        padding: 5px;
+    }
+    
+    .siglas {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    table {
+        width: 80%;
+    }
+    
+    table th {
+        font-size: 10px;
+    }
+    
+    table td {
+        font-size: 6.5px;
+    }
+
+    .container-equipe {
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .imagem-pequena {
+        width: 50px;
+    }
+
+    .imagem-classificacao {
+        width: 60px;
+    }
+    
+    .container-placar {
+        width: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+
+    .formulario {
+        font-size: 22px;
+    }
+    
+    select {
+        padding: 5px;
+    }
+    
+    .siglas {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    table {
+        width: 90%;
+    }
+    
+    table th {
+        font-size: 18px;
+    }
+    
+    table td {
+        font-size: 16px;
+    }
+
+    .container-equipe {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .imagem-pequena {
+        width: 60px;
+    }
+
+    .imagem-classificacao {
+        width: 70px;
+    }
+
+    .container-placar {
+        margin-right: 10px;
+    }
+}
+
+
+/* Estilos classificação */
+/*
+h1 {
+    font-size: 0px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.formulario {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.siglas {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.equipes-classificacao {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-classificacao {
+    width: 50px;
+} */
+
+/* Estilos da tabela de jogos da primeira fase */
+/*
+table {
+    width: 90%;
+    background: #020616;
+    color: #fff;
+    border-radius: 8px;
+    margin-inline: auto;
+    margin-block: 1rem;
+}
+
+table tr td {
+    text-align: center;
+}
+
+table th {
+    font-size: 18px;
+}
+
+table td {
+    font-size: 16px;
+}
+
+table tr td, table tr th {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+table tr:last-child td {
+    border: 0;
+}
+
+.centralizar {
+    display: flex;
+    width: 100%;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-equipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alinhamento-esquerda {
+    text-align: left;
+}
+
+.alinhamento-em-linha {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-pequena {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-partida {
+    display: block;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.placar {
+    display: block;
+    justify-content: end;
+    width: 35px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20%;
+    line-height: 30px;
+    background-color: #000d2b;
+    color: #fff;
+    border: none;
+}
+
+input[type=number] {
+    text-align: right;
+    font-weight: bold;
+} */
+
+/* formatação das quartas */
+/*
+.divQuartas, .divSemifinais, .divFinais {
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.divQuartas > div, .divSemifinais > div, .divFinais > div {
+    display: block;
+    width: 80%;
+    justify-content: center;
+    margin: 10px auto;
+    background: #020616;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+*/
+/*
+.jogo {
+    background: #000d2b;
+    border-radius: 18px; 
+    padding-block: 5px;
+    margin-block: 1rem;
+}
+
+.dia {
+    background: #000d2b;
+    color: #fff;
+    border-radius: 18px;
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+.hora {
+    background: #000d2b;
+    color: #fff;
+    border-radius: 18px;
+    padding: 5px;
+    font-size: 0.75rem;
+} */
+
+/* Mobile 
+@media screen and (max-width: 348px) {
+    h1 {
+        display: flex;
+        border: 2px solid red;
+        font-size: 2px;
+        text-align: end;
+        color: blue;
+    }
+    
+    h2 {
+        font-size: 10px;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+
+    .formulario {
+        font-size: 15px;
+    }
+    
+    select {
+        padding: 3px;
+    }
+    
+    .siglas {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin: 5px;
+    }
+    
+    table th {
+        font-size: 12px;
+    }
+    
+    table td {
+        font-size: 10px;
+    }
+
+    .container-equipe {
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    .imagem-pequena {
+        width: 40px;
+    }
+
+    .imagem-classificacao {
+        width: 50px;
+    }
+    
+    .container-placar {
+        width: 30px;
+        margin-left: 10px;
+    }
+}
+*/
+/* Tablet 
+@media screen and (min-width: 321px) and (max-width: 768px){
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    .formulario {
+        font-size: 18px;
+    }
+    
+    select {
+        padding: 5px;
+    }
+    
+    .siglas {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    table {
+        width: 80%;
+    }
+    
+    table th {
+        font-size: 16.5px;
+    }
+    
+    table td {
+        font-size: 14px;
+    }
+
+    .container-equipe {
+        font-size: 12px;
+        width: 100%;
+    }
+    
+    .imagem-pequena {
+        width: 50px;
+    }
+
+    .imagem-classificacao {
+        width: 60px;
+    }
+    
+    .container-placar {
+        width: 30px;
+        margin-right: 10px;
+    }
+}*/
+
+/* Desktop 
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+
+    .formulario {
+        font-size: 22px;
+    }
+    
+    select {
+        padding: 5px;
+    }
+    
+    .siglas {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    table {
+        width: 90%;
+    }
+    
+    table th {
+        font-size: 18px;
+    }
+    
+    table td {
+        font-size: 16px;
+    }
+
+    .container-equipe {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    .imagem-pequena {
+        width: 60px;
+    }
+
+    .imagem-classificacao {
+        width: 70px;
+    }
+
+    .container-placar {
+        margin-right: 10px;
+    }
+} */

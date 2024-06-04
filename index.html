@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+    <title>Tabela da Copa do Interior</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main>
+        <h1>Tabela da Copa do Interior 2024</h1>
+
+        <h2>GRUPOS</h2>
+        <div class="formulario">
+            <form action="">
+                <label for="letrasDosGrupos">Selecione a letra do grupo: </label>
+                <select name="letrasDosGrupos" id="letrasDosGrupos" class="letrasDosGrupos">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            </form>
+        </div>
+        <h3>Grupo <span class="letra"></span></h3>
+
+        <table class="tabelaClassificacao">
+            <tr>
+                <th>#</th>
+                <th>Equipe</th>
+                <th>PG</th>
+                <th>J</th>
+                <th>V</th>
+                <th>E</th>
+                <th>D</th>
+                <th>GP</th>
+                <th>GC</th>
+                <th>SG</th>
+            </tr>
+            <tbody class="corpoClassificacao">
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
+        <p class="siglas">SIGLAS: PG pontos ganhos | J jogos | V vitórias | E empates | D derrotas | GP gols pró | GC gols contra | SG Saldo de gols</p>
+        
+        <h2>TABELA DE JOGOS</h2>
+        <table class="tabelaJogos">
+            <tr>
+                <th>Dia</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Grupo</th>
+                <th>Jogo</th>
+                <th>Local</th>
+            </tr>
+        </table> 
+
+        <h2>QUARTAS DE FINAIS</h2>
+
+        <div class="divQuartas">
+        </div>
+
+        <h1>Semifinais</h1>
+
+        <div class="divSemifinais">
+            
+            <div class='semi s1'>
+                <h3 class='jogo'>Semifinal 1</h3>
+                <h4>
+                    <span class='dia'>DOM</span>
+                    14/07/2022
+                    <span class='hora'>HORÁRIO INDEFINIDO</span>
+                </h4>
+                <h4 class='centralizar jogo'>
+                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
+                    <input type='number' min='0' max='99' class='placar' disabled>
+                    <span class="quartas q1">VENC JOGO 01</span> x <span class="quartas q2">VENC JOGO 03</span>
+                    <input type='number' min='0' max='99' class='placar' disabled>
+                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
+                </h4>
+                <h5>SEDE</h5>
+            </div>
+
+            <div class='semi s2'>
+                <h3 class='jogo'>Semifinal 2</h3>
+                <h4>
+                    <span class='dia'>DOM</span>
+                    14/07/2024
+                    <span class='hora'>HORÁRIO INDEFINIDO</span>
+                </h4>
+                <h4 class='centralizar jogo'>
+                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
+                    <input type='number' min='0' max='99' class='placar' disabled>
+                    <span class="quartas q3">VENC JOGO 02</span> x <span class="quartas q4">VENC JOGO 04</span>
+                    <input type='number' min='0' max='99' class='placar' disabled>
+                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
+                </h4>
+                <h5>SEDE</h5>
+            </div>
+        </div>
+
+        <h1>Final</h1>
+
+        <div class="divFinais">
+            <div class='grandeFinal'>
+                <h3 class='jogo'>Grande Final</h3>
+                <h4>
+                    <span class='dia'>DOM</span>
+                    21/07/2024
+                    <span class='hora'>HORÁRIO INDEFINIDO</span>
+                </h4>
+                <h4 class='centralizar jogo'>
+                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
+                    <input type='number' min='0' max='99' class='placar' value="" disabled>
+                    <span>VENC SEMI 01</span> x <span class="final f2">VENC SEMI 02</span>
+                    <input type='number' min='0' max='99' class='placar' value="" disabled>
+                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
+                </h4>
+                <h5>SEDE</h5>
+                <h6>Prorrogação:</h6>
+                <h6>Pênaltis:</h6>
+                <h6>Campeão:</h6>
+                <h6>Vice:</h6>
+            </div>
+        </div>
+
+        <h2>ARTILHEIROS</h2>
+        <table class="tabelaArtilheiros">
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Equipe</th>
+                <th>Gols</th>
+            </tr>
+        </table> 
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
