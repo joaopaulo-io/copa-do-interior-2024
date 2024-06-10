@@ -203,8 +203,8 @@
         "equipe_visitante": "LAGOA DAS LAGES",
         "escudo_mandante": "monteiro.png",
         "escudo_visitante": "lagoadaslages.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "1",
+        "gols_visitante": "1",
         "partida": "MERCADINHO MONTEIRO X LAGOA DAS LAGES"
     },
     {
@@ -219,8 +219,8 @@
         "equipe_visitante": "RIACHO DA VÁRZEA",
         "escudo_mandante": "agrovilla.png",
         "escudo_visitante": "riachodavarzea.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "1",
+        "gols_visitante": "1",
         "partida": "AGROVILLA X RIACHO DA VÁRZEA"
     },
     {
