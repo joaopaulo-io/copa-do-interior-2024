@@ -2,143 +2,631 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png" />
-    <title>Tabela da Copa do Interior</title>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+     <!--=============== CSS SWIPER ===============-->
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+     <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+     <title>Copa do interior 2024</title>
 </head>
 <body>
-    <main>
-        <h1>Tabela da Copa do Interior 2024</h1>
+    <!--=============== NAVBAR ===============-->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Logo da Copa do Interior 2024">
+            </a>
 
-        <h2>GRUPOS</h2>
-        <div class="formulario">
-            <form action="">
-                <label for="letrasDosGrupos">Selecione a letra do grupo: </label>
-                <select name="letrasDosGrupos" id="letrasDosGrupos" class="letrasDosGrupos">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select>
-            </form>
-        </div>
-        <h3>Grupo <span class="letra"></span></h3>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#header" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
 
-        <table class="tabelaClassificacao">
-            <tr>
-                <th>#</th>
-                <th>Equipe</th>
-                <th>PG</th>
-                <th>J</th>
-                <th>V</th>
-                <th>E</th>
-                <th>D</th>
-                <th>GP</th>
-                <th>GC</th>
-                <th>SG</th>
-            </tr>
-            <tbody class="corpoClassificacao">
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-            </tbody>
-        </table>
-        <p class="siglas">SIGLAS: PG pontos ganhos | J jogos | V vitórias | E empates | D derrotas | GP gols pró | GC gols contra | SG Saldo de gols</p>
-        
-        <h2>TABELA DE JOGOS</h2>
-        <table class="tabelaJogos">
-            <tr>
-                <th>Dia</th>
-                <th>Data</th>
-                <th>Hora</th>
-                <th>Grupo</th>
-                <th>Jogo</th>
-                <th>Local</th>
-            </tr>
-        </table> 
+                    <li class="nav__item">
+                        <a href="#classificacao" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Classificação</span>
+                        </a>
+                    </li>
 
-        <h2>QUARTAS DE FINAIS</h2>
+                    <li class="nav__item">
+                        <a href="#fase1" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>1ª Fase</span>
+                        </a>
+                    </li>
 
-        <div class="divQuartas">
-        </div>
+                    <li class="nav__item">
+                        <a href="#quartas-de-final" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Quartas</span>
+                        </a>
+                    </li>
 
-        <h1>Semifinais</h1>
+                    <li class="nav__item">
+                        <a href="#semi-final" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Semi</span>
+                        </a>
+                    </li>
 
-        <div class="divSemifinais">
-            
-            <div class='semi s1'>
-                <h3 class='jogo'>Semifinal 1</h3>
-                <h4>
-                    <span class='dia'>DOM</span>
-                    14/07/2022
-                    <span class='hora'>HORÁRIO INDEFINIDO</span>
-                </h4>
-                <h4 class='centralizar jogo'>
-                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
-                    <input type='number' min='0' max='99' class='placar' disabled>
-                    <span class="quartas q1">VENC JOGO 01</span> x <span class="quartas q2">VENC JOGO 03</span>
-                    <input type='number' min='0' max='99' class='placar' disabled>
-                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
-                </h4>
-                <h5>SEDE</h5>
+                    <li class="nav__item">
+                        <a href="#header" class="nav__link">
+                            <i class="ri-arrow-right-up-line"></i>
+                            <span>Final</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+
+                <div class="nav__social">
+                    <a href="https://www.instagram.com/secretariade_esportestc" target="_blank" class="nav__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://facebook.com/" target="_blank" class="nav__social-link">
+                        <i class="ri-facebook-line"></i>
+                     </a>
+                </div>
             </div>
 
-            <div class='semi s2'>
-                <h3 class='jogo'>Semifinal 2</h3>
-                <h4>
-                    <span class='dia'>DOM</span>
-                    14/07/2024
-                    <span class='hora'>HORÁRIO INDEFINIDO</span>
-                </h4>
-                <h4 class='centralizar jogo'>
-                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
-                    <input type='number' min='0' max='99' class='placar' disabled>
-                    <span class="quartas q3">VENC JOGO 02</span> x <span class="quartas q4">VENC JOGO 04</span>
-                    <input type='number' min='0' max='99' class='placar' disabled>
-                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
-                </h4>
-                <h5>SEDE</h5>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
             </div>
         </div>
+    </nav>
 
-        <h1>Final</h1>
+    <!--=============== HEADER ===============-->
+    <header id="header">
+        <div class="container header__container mySwiper">
+            <div class="header__title">
+                <h1>Jogos em Destaque</h1>
+                <a href="#fase1">Ver mais</a>
+            </div>
+            <div class="card__content swiper-wrapper">
+                <article class="highlights swiper-slide">
+                    <div class="shild__teams">
+                        <div class="teams__info">
+                            <img src="assets/images/lagoadaslages.png" alt="Escudo equipe mandante">
+                            <h5>Lagoa das Lages</h5>
+                        </div>
+                        <div class="scoreboard">
+                            <!-- <h6>2</h6> -->
+                            <span>x</span>
+                            <!-- <h6>2</h6> -->
+                        </div>
+                        <div class="teams__info">
+                            <img src="assets/images/barsemlona.png" alt="Escudo equipe visitante">
+                            <h5>Bar sem Lona</h5>
+                        </div>
+                    </div>
+                    <div class="highlights__info">
+                        <h4>Copa do Interior 2024</h4>
+                        <p>16 JUN | 08:00H | SEDE</p>
+                        <a href="#classificacao" class="btn btn-primary">Grupo A</a>
+                    </div>
+                </article>
 
-        <div class="divFinais">
-            <div class='grandeFinal'>
-                <h3 class='jogo'>Grande Final</h3>
-                <h4>
-                    <span class='dia'>DOM</span>
-                    21/07/2024
-                    <span class='hora'>HORÁRIO INDEFINIDO</span>
-                </h4>
-                <h4 class='centralizar jogo'>
-                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
-                    <input type='number' min='0' max='99' class='placar' value="" disabled>
-                    <span>VENC SEMI 01</span> x <span class="final f2">VENC SEMI 02</span>
-                    <input type='number' min='0' max='99' class='placar' value="" disabled>
-                    <img class='imagem-pequena' src='./images/escudopadrao.png' />
-                </h4>
-                <h5>SEDE</h5>
-                <h6>Prorrogação:</h6>
-                <h6>Pênaltis:</h6>
-                <h6>Campeão:</h6>
-                <h6>Vice:</h6>
+                <article class="highlights swiper-slide">
+                    <div class="shild__teams">
+                        <div class="teams__info">
+                            <img src="assets/images/forcajovem.png" alt="Escudo equipe mandante">
+                            <h5>Força Jovem</h5>
+                        </div>
+                        <div class="scoreboard">
+                            <!-- <h6>2</h6> -->
+                            <span>x</span>
+                            <!-- <h6>2</h6> -->
+                        </div>
+                        <div class="teams__info">
+                            <img src="assets/images/gama.png" alt="Escudo equipe visitante">
+                            <h5>Gama</h5>
+                        </div>
+                    </div>
+                    <div class="highlights__info">
+                        <h4>Copa do Interior 2024</h4>
+                        <p>16 JUN | 10:00H | SEDE</p>
+                        <a href="#classificacao" class="btn btn-primary">Grupo D</a>
+                    </div>
+                </article>
+
+                <article class="highlights swiper-slide">
+                    <div class="shild__teams">
+                        <div class="teams__info">
+                            <img src="assets/images/riachodavarzea.png" alt="Escudo equipe mandante">
+                            <h5>Riacho da Varzea</h5>
+                        </div>
+                        <div class="scoreboard">
+                            <!-- <h6>2</h6> -->
+                            <span>x</span>
+                            <!-- <h6>2</h6> -->
+                        </div>
+                        <div class="teams__info">
+                            <img src="assets/images/duzome.png" alt="Escudo equipe visitante">
+                            <h5>Duzome</h5>
+                        </div>
+                    </div>
+                    <div class="highlights__info">
+                        <h4>Copa do Interior 2024</h4>
+                        <p>16 JUN | 14:00H | CAÇIMBA NOVA</p>
+                        <a href="#classificacao" class="btn btn-primary">Grupo B</a>
+                    </div>
+                </article>
+
+                <article class="highlights swiper-slide">
+                    <div class="shild__teams">
+                        <div class="teams__info">
+                            <img src="assets/images/angelic.png" alt="Escudo equipe mandante">
+                            <h5>Angelic Rb United</h5>
+                        </div>
+                        <div class="scoreboard">
+                            <!-- <h6>2</h6> -->
+                            <span>x</span>
+                            <!-- <h6>2</h6> -->
+                        </div>
+                        <div class="teams__info">
+                            <img src="assets/images/astonvilla.png" alt="Escudo equipe visitante">
+                            <h5>Aston Villa</h5>
+                        </div>
+                    </div>
+                    <div class="highlights__info">
+                        <h4>Copa do Interior 2024</h4>
+                        <p>16 JUN | 16:00H | CAÇIMBA NOVA</p>
+                        <a href="#classificacao" class="btn btn-primary">Grupo C</a>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+
+    <!--=============== CLASSIFICAÇÃO ===============-->
+    <section class="classificacao" id="classificacao">
+        <div class="container">
+            <div class="classificacao__title">
+                <h1>Classificação</h1>
+                <a href="#fase1">Ver mais</a>
+            </div>
+            <div class="formulario">
+                <form action="">
+                    <label for="letrasDosGrupos">Selecione a letra do grupo: </label>
+                    <select name="letrasDosGrupos" id="letrasDosGrupos" class="letrasDosGrupos">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </form>
+            </div>
+            <h3 class="title__group">Grupo <span class="letra"></span></h3>
+
+            <table class="tabelaClassificacao">
+                <tr>
+                    <th>#</th>
+                    <th>EQUIPE</th>
+                    <th>PG</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>GP</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>
+                <tbody class="corpoClassificacao">
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!--=============== JOGO FASE 1 ===============-->
+    <section class="fase1" id="fase1">
+        <div class="container">
+           <div class="fase1__title">
+             <h1>Jogos 1ª fase</h1>
+             <a href="quartas-de-final">Ver mais</a>
+           </div>
+           <div class="tabelaJogos"></div>
+        </div>
+    </section>
+
+    <!--=============== QUARTAS DE FINAL ===============-->
+    <section id="quartas-de-final">
+        <div class="container">
+            <div class="title__finais">
+                <h1>Quartas de Final</h1>
+                <a>Ver mais</a>
+            </div>
+
+            <div class="grid__container">
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>LOCAL INDEFINIDO</p>
+                        <h3>23/08 - 13:00<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>1º Grupo A</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>2º Grupo B</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Jogo 1</button>
+                    </div>
+                </div>
+
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>LOCAL INDEFINIDO</p>
+                        <h3>07/07 - Horário Indefinido<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>1º Grupo B</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>2º Grupo A</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Jogo 2</button>
+                    </div>
+                </div>
+
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>LOCAL INDEFINIDO</p>
+                        <h3>07/07 - Horário Indefinido<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>1º Grupo C</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>2º Grupo D</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Jogo 3</button>
+                    </div>
+                </div>
+
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>LOCAL INDEFINIDO</p>
+                        <h3>07/07 - Horário Indefinido<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>1º Grupo D</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>2º Grupo C</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Jogo 4</button>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <h2>ARTILHEIROS</h2>
-        <table class="tabelaArtilheiros">
-            <tr>
-                <th>#</th>
-                <th>Nome</th>
-                <th>Equipe</th>
-                <th>Gols</th>
-            </tr>
-        </table> 
-    </main>
-    <script src="js/index.js"></script>
+    <!--=============== SEMI-FINAL ===============-->
+    <section id="semi-final">
+        <div class="container">
+            <div class="title__finais">
+                <h1>Semi-final</h1>
+                <a href="#final">Ver mais</a>
+            </div>
+            <div class="grid__container">
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>LOCAL INDEFINIDO</p>
+                        <h3>14/07 - Horário Indefinido<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>Venc jogo 1</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>Venc jogo 3</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Jogo A</button>
+                    </div>
+                </div>
+
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>LOCAL INDEFINIDO</p>
+                        <h3>14/07 - Horário Indefinido<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>Venc jogo 2</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>Venc jogo 4</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Jogo B</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== FINAL ===============-->
+    <section id="final">
+        <div class="container">
+            <div class="title__finais">
+                <h1>Final</h1>
+                <a>Ver mais</a>
+            </div>
+
+            <div class="container__final">
+                <div class="container__finais">
+                    <div class='titulo-cards-finais'>
+                        <h2>Copa do Interior 2024</h2>
+                        <p>SEDE</p>
+                        <h3>23/08 - 13:00<h3>
+                    </div>
+
+                    <div class="container-partida">
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>Venc jogo A</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                        <div class='placar-finais'>
+                            <!--
+                            <span class='placar'>1</span> -->
+                            <span>X</span>
+                            <!--
+                            <span class='placar'>5</span> -->
+                        </div>
+                        <div class="container-equipe-finais">
+                            <div class="alinhamento-em-linha-finais">
+                                <span class='equipe-nome-finais'>Venc jogo B</span>
+                                <img src="assets/images/escudo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__partida">
+                        <h6>Prorrogação: </h6>
+                        <h6>Penaltis: </h6>
+                        <h6>Placar Penaltis: </h6>
+                        <h6>Classificado: </h6>
+                    </div>
+
+                    <div class='button-tabela-jogos'>
+                        <button class='btn btn-primary'>Final</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="" class="footer__logo"><h4>Copa do Interior 2024</h4></a>
+                <p>Acompanhe todos os resultados da Copa do Interior de Santa Cruz 2024.</p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Classificação</a></li>
+                    <li><a href="">Jogos</a></li>
+                    <li><a href="">Artilheiros</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms and Conditions</a></li>
+                    <li><a href="">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <ul class="footer__socials">
+                    <li><a href="https://www.instagram.com/secretariade_esportestc"><i class="ri-instagram-line"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <small>Copyright &copy; Secretaria de Esportes</small>
+        </div>
+    </footer>
+    
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    </script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
 </body>
 </html>
