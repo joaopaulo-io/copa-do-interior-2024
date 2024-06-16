@@ -235,8 +235,8 @@
         "equipe_visitante": "BAR SEM LONA",
         "escudo_mandante": "lagoadaslages.png",
         "escudo_visitante": "barsemlona.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "7",
+        "gols_visitante": "0",
         "partida": "LAGOA DAS LAGES X BAR SEM LONA"
     },
     {
@@ -251,8 +251,8 @@
         "equipe_visitante": "GAMA",
         "escudo_mandante": "forcajovem.png",
         "escudo_visitante": "gama.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "0",
+        "gols_visitante": "2",
         "partida": "FORÇA JOVEM X GAMA"
     },
     {
@@ -358,7 +358,7 @@
         "diaSemana": "DOM",
         "data": "30/06",
         "hora": "14:00",
-        "estadio": "SEDE",
+        "estadio": "PORTUGUESA",
         "equipe_mandante": "GENTIL",
         "equipe_visitante": "ANGELIC RB UNITED",
         "escudo_mandante": "gentil.png",
@@ -374,7 +374,7 @@
         "diaSemana": "DOM",
         "data": "30/06",
         "hora": "16:00",
-        "estadio": "SEDE",
+        "estadio": "PORTUGUESA",
         "equipe_mandante": "NOVA OLINDA",
         "equipe_visitante": "FORÇA JOVEM",
         "escudo_mandante": "novaolinda.png",
