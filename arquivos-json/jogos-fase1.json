@@ -267,8 +267,8 @@
         "equipe_visitante": "DUZOME",
         "escudo_mandante": "riachodavarzea.png",
         "escudo_visitante": "duzome.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "0",
+        "gols_visitante": "6",
         "partida": "RIACHO DA VÁRZEA x DUZOME"
     },
     {
@@ -283,8 +283,8 @@
         "equipe_visitante": "ASTON VILLA",
         "escudo_mandante": "angelic.png",
         "escudo_visitante": "astonvilla.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "0",
+        "gols_visitante": "1",
         "partida": "ANGELIC RB UNITED X ASTON VILLA"
     },
     {
