@@ -25,8 +25,8 @@
 		"empates": 1,
 		"derrotas": 1,
 		"gols_pro": 3,
-		"gols_contra": 2,
-		"saldo_de_gols": 1,
+		"gols_contra": 5,
+		"saldo_de_gols": -2,
 		"posicao": 3,
 		"amarelos": 0,
 		"vermelhos": 0
