@@ -691,6 +691,15 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 5rem;
 }
+
+.logo__sec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.logo__sec img {
+    width: 400px;
+}
   
 .footer__container > div h4 {
     font-size: 1rem;
