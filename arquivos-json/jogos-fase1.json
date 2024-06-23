@@ -331,8 +331,8 @@
         "equipe_visitante": "MERCADINHO MONTEIRO",
         "escudo_mandante": "liverpool.png",
         "escudo_visitante": "monteiro.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "4",
+        "gols_visitante": "4",
         "partida": "LIVERPOOL X MERCADINHO MONTEIRO"
     },
     {
@@ -347,8 +347,8 @@
         "equipe_visitante": "AGROVILLA",
         "escudo_mandante": "ilhadaroca.png",
         "escudo_visitante": "agrovilla.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "1",
+        "gols_visitante": "1",
         "partida": "ILHA DA ROÇA X AGROVILLA"
     },
     {
