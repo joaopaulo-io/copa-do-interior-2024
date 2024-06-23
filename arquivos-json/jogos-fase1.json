@@ -299,8 +299,8 @@
         "equipe_visitante": "REAL DANTAS",
         "escudo_mandante": "gama.png",
         "escudo_visitante": "realdantas.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "1",
+        "gols_visitante": "1",
         "partida": "GAMA X REAL DANTAS"
     },
     {
@@ -315,8 +315,8 @@
         "equipe_visitante": "ATLÉTICO PORTELA",
         "escudo_mandante": "astonvilla.png",
         "escudo_visitante": "atleticoportela.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "1",
+        "gols_visitante": "1",
         "partida": "ASTON VILLA X ATLÉTICO PORTELA"
     },
     {
