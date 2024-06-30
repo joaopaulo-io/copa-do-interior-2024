@@ -363,8 +363,8 @@
         "equipe_visitante": "ANGELIC RB UNITED",
         "escudo_mandante": "gentil.png",
         "escudo_visitante": "angelic.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "5",
+        "gols_visitante": "1",
         "partida": "GENTIL X ANGELIC RB UNITED"
     },
     {
@@ -379,8 +379,8 @@
         "equipe_visitante": "FORÇA JOVEM",
         "escudo_mandante": "novaolinda.png",
         "escudo_visitante": "forcajovem.png",
-        "gols_mandante": "",
-        "gols_visitante": "",
+        "gols_mandante": "1",
+        "gols_visitante": "0",
         "partida": "NOVA OLINDA X FORÇA JOVEM"
     }
 ]
