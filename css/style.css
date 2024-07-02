@@ -647,7 +647,7 @@ table tr:last-child td {
 }
   
 .equipe-nome-finais {
-    font-size: 7px;
+    font-size: 12px;
     color: var(--white-color);
     display: flex;
 }
